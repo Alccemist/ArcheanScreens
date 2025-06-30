@@ -1,6 +1,5 @@
-# ArcheanVirtualScreens
-For the game "Archean" — personal repository to track my learning experience with XenonCode and its applications in virtual screens.
+# ArcheanScreens
+For the game "Archean" — this is my personal repository to track my learning experience with screens and XenonCode.
 
-Requires full game. Comes with a save that has everything wired.
-
-Gotta troubleshoot why I can't push from vs code lmfao
+- Requires full game for dashboard interaction.
+- Comes with example in parent folder "worlds". Worlds folder inserted into Archean-data -> server
