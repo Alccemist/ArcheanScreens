@@ -27,11 +27,22 @@ init
 	; The Dashboard Screen:
 		; First, create a dashboard. Then, on it, create screens.
 		; Connected through IO. One dashboard allows several screens.
-	var $dash0 = screen("dash0",0) ;screen(aliasOrIoNumber, channelIndex)
+	var $screen0 = screen("dash0",0) ;screen(aliasOrIoNumber, channelIndex)
 		; Dashboard 0 known as Dash0, accessed via channel 1
-	var $dash1 = screen("dash0",1) ;screen(aliasOrIoNumber, channelIndex)
-	$dash0.blank(black)
-	$dash0.write(0, 0, red, "I\nam\na\ndash-\nboard\nscreen!")
+	var $screen1 = screen("dash0",1) ;screen(aliasOrIoNumber, channelIndex)
+	$screen0.blank(black)
+	$screen0.write(0, 0, red, "I\nam\na\ndash-\nboard\nscreen!")
+	
+	var $hdScreen0 = screen("dash0",2) 
+	; This is an HD screen! Lots of pixels in a small frame.
+		; HD means scaling text and other elements up if need.
+		; Probably takes up more resources too
+	$hdScreen0.blank(color(255, 255, 255, 128)) ; RGBA format. 128 is halfway
+	$hdScreen0.text_size(2)
+	$hdScreen0.write(1,1, green, "I'm an HD screen!")
+	$hdScreen0.write(60,25, cyan, "Higher \n pixel \n  density!")
+		; Polygon refresher: arguments after color are XY-pts (x_n,y_n)
+	$hdScreen0.draw_poly(green, 0, 25, 25, 50, 50, 25)
 	
 	; The Virtual Screen:
 		; If we want to use a virtual screen, we need to copy it to a physical screen.
@@ -43,7 +54,7 @@ init
 	$vScn.draw_circle($vScn.width/2, $vScn.height/2, 15, blue)
 	$vScn.write(1, 1, red, "I am a\nvirtual\nscreen!") 
 		
-	screen_copy($vScn,$dash1, 0, 0, 0, 0, $vScnWidth, $vScnHeight)
+	screen_copy($vScn,$screen1, 0, 0, 0, 0, $vScnWidth, $vScnHeight)
 	
 ; [Tick Scope]
 tick
