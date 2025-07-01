@@ -21,6 +21,6 @@ function @DoubleDivSum($a:number, $b:number):number
 	; Doubles a, halves b, sums them, then returns it.
 	return $a*2 + $b/2
 	
+	
 function @returnMod($a:number, $b:number):number
-	; Returns the modulus of a and b
 	return $a%$b
