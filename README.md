@@ -1,7 +1,7 @@
 # ArcheanScreens
-For the game "Archean" — this is my personal repository to track my learning experience with screens and XenonCode.
-Please note that much of this is sloppy. Very little of it has tangible value. It has simply been me reading documentation and trying to make interactive or "cool" screens.
+For the game "Archean" — no longer updated. Poorly organized code and probably unoptimized. 
+This was simply to break me into XenonCode and screens for visualizing information. Now time to move onto better — and cleaner — things.
 
-- Requires full game for dashboard interaction.
+# Key Features
 - Comes with example save in parent folder "worlds". Worlds folder copies into Archean-data/server
 - HddCode contains the code from the example save's computer.
