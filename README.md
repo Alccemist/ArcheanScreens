@@ -1,5 +1,5 @@
 # ArcheanScreens
-For the game "Archean" — no longer updated. Poorly organized code and probably unoptimized. 
+For the game "Archean" — no longer updated. Poorly organized and certainly unoptimized. 
 This was simply to break me into XenonCode and screens for visualizing information. Now time to move onto better — and cleaner — things.
 
 # Key Features
